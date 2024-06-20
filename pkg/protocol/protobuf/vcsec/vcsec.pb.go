@@ -7,8 +7,8 @@
 package vcsec
 
 import (
-	errors "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/errors"
-	keys "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/keys"
+	errors "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/errors"
+	keys "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/keys"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

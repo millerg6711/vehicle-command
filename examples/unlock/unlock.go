@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/teslamotors/vehicle-command/pkg/account"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
+	"github.com/millerg6711/vehicle-command/pkg/account"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
 )
 
 func main() {

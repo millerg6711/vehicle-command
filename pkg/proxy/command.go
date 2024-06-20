@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/teslamotors/vehicle-command/pkg/connector/inet"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
-	"github.com/teslamotors/vehicle-command/pkg/vehicle"
+	"github.com/millerg6711/vehicle-command/pkg/connector/inet"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
+	"github.com/millerg6711/vehicle-command/pkg/vehicle"
 
-	carserver "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/carserver"
+	carserver "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/carserver"
 )
 
 var (

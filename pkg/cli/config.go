@@ -57,12 +57,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/teslamotors/vehicle-command/internal/log"
-	"github.com/teslamotors/vehicle-command/pkg/account"
-	"github.com/teslamotors/vehicle-command/pkg/cache"
-	"github.com/teslamotors/vehicle-command/pkg/connector/ble"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
-	"github.com/teslamotors/vehicle-command/pkg/vehicle"
+	"github.com/millerg6711/vehicle-command/internal/log"
+	"github.com/millerg6711/vehicle-command/pkg/account"
+	"github.com/millerg6711/vehicle-command/pkg/cache"
+	"github.com/millerg6711/vehicle-command/pkg/connector/ble"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
+	"github.com/millerg6711/vehicle-command/pkg/vehicle"
 
 	"github.com/99designs/keyring"
 )

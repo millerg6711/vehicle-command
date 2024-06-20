@@ -8,14 +8,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/teslamotors/vehicle-command/internal/authentication"
-	"github.com/teslamotors/vehicle-command/internal/log"
-	"github.com/teslamotors/vehicle-command/pkg/connector"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
+	"github.com/millerg6711/vehicle-command/internal/authentication"
+	"github.com/millerg6711/vehicle-command/internal/log"
+	"github.com/millerg6711/vehicle-command/pkg/connector"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
 
 	"google.golang.org/protobuf/proto"
 
-	universal "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/universalmessage"
+	universal "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/universalmessage"
 )
 
 // Dispatcher objects send (encrypted) messages to a vehicle and route incoming messages to the

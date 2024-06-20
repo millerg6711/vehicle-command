@@ -1,4 +1,4 @@
-module github.com/teslamotors/vehicle-command
+module github.com/millerg6711/vehicle-command
 
 go 1.20
 

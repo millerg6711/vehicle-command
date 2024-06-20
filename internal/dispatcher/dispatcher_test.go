@@ -9,14 +9,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/teslamotors/vehicle-command/pkg/connector"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
+	"github.com/millerg6711/vehicle-command/pkg/connector"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/teslamotors/vehicle-command/internal/authentication"
-	"github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/signatures"
-	universal "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/universalmessage"
+	"github.com/millerg6711/vehicle-command/internal/authentication"
+	"github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/signatures"
+	universal "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/universalmessage"
 )
 
 var errOutboxFull = errors.New("dispatcher: outbox full")

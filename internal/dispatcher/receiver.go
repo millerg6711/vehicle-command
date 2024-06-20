@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	universal "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/universalmessage"
+	universal "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/universalmessage"
 )
 
 var receiverBufferSize = 10

@@ -10,7 +10,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/teslamotors/vehicle-command/internal/authentication"
+	"github.com/millerg6711/vehicle-command/internal/authentication"
 )
 
 // Expose some interfaces from the otherwise internal package

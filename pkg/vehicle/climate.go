@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	carserver "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/carserver"
+	carserver "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/carserver"
 )
 
 // SetSeatCooler sets seat cooling level.

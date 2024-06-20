@@ -6,11 +6,11 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/teslamotors/vehicle-command/pkg/connector"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
-	carserver "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/carserver"
-	"github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/keys"
-	"github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/vcsec"
+	"github.com/millerg6711/vehicle-command/pkg/connector"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
+	carserver "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/carserver"
+	"github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/keys"
+	"github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/vcsec"
 )
 
 func (v *Vehicle) SetValetMode(ctx context.Context, on bool, valetPassword string) error {
@@ -188,7 +188,7 @@ func (v *Vehicle) AddKey(ctx context.Context, publicKey *ecdh.PublicKey, isOwner
 // AddKeyWithRole adds a public key to the vehicle's whitelist. See [Protocol Specification] for
 // more information on roles.
 //
-// [Protocol Specification]: https://github.com/teslamotors/vehicle-command/blob/main/pkg/protocol/protocol.md#roles
+// [Protocol Specification]: https://github.com/millerg6711/vehicle-command/blob/main/pkg/protocol/protocol.md#roles
 func (v *Vehicle) AddKeyWithRole(ctx context.Context, publicKey *ecdh.PublicKey, role keys.Role, formFactor vcsec.KeyFormFactor) error {
 	if publicKey.Curve() != ecdh.P256() {
 		return protocol.ErrInvalidPublicKey
@@ -297,7 +297,7 @@ func (v *Vehicle) SendAddKeyRequest(ctx context.Context, publicKey *ecdh.PublicK
 // SendAddKeyRequestWithRole behaves like [SendAddKeyRequest] except the new key's role can be
 // specified explicitly. See [Protocol Specification] for more information on roles.
 //
-// [Protocol Specification]: https://github.com/teslamotors/vehicle-command/blob/main/pkg/protocol/protocol.md#roles
+// [Protocol Specification]: https://github.com/millerg6711/vehicle-command/blob/main/pkg/protocol/protocol.md#roles
 func (v *Vehicle) SendAddKeyRequestWithRole(ctx context.Context, publicKey *ecdh.PublicKey, role keys.Role, formFactor vcsec.KeyFormFactor) error {
 	if publicKey.Curve() != ecdh.P256() {
 		return protocol.ErrInvalidPublicKey

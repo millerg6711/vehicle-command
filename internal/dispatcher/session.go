@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/teslamotors/vehicle-command/internal/authentication"
-	"github.com/teslamotors/vehicle-command/pkg/connector"
+	"github.com/millerg6711/vehicle-command/internal/authentication"
+	"github.com/millerg6711/vehicle-command/pkg/connector"
 
-	universal "github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/universalmessage"
+	universal "github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/universalmessage"
 )
 
 var defaultExpiration = 5 * time.Second

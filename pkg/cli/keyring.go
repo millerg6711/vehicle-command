@@ -5,8 +5,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/teslamotors/vehicle-command/internal/authentication"
-	"github.com/teslamotors/vehicle-command/pkg/protocol"
+	"github.com/millerg6711/vehicle-command/internal/authentication"
+	"github.com/millerg6711/vehicle-command/pkg/protocol"
 
 	"github.com/99designs/keyring"
 	"golang.org/x/term"

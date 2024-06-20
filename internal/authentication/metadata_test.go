@@ -5,7 +5,7 @@ import (
 	"crypto/sha512"
 	"testing"
 
-	"github.com/teslamotors/vehicle-command/pkg/protocol/protobuf/signatures"
+	"github.com/millerg6711/vehicle-command/pkg/protocol/protobuf/signatures"
 )
 
 type metadataItem struct {
