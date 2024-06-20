@@ -130,3 +130,17 @@ func (v *Vehicle) CloseTonneau(ctx context.Context) error {
 func (v *Vehicle) StopTonneau(ctx context.Context) error {
 	return v.executeClosureAction(ctx, vcsec.ClosureMoveType_E_CLOSURE_MOVE_TYPE_STOP, ClosureTonneau)
 }
+
+// Send waypoints
+func (v *Vehicle) SendWaypoints(ctx context.Context, waypoints string) error {
+	return v.executeCarServerAction(ctx,
+		&carserver.Action_VehicleAction{
+			VehicleAction: &carserver.VehicleAction{
+				VehicleActionMsg: &carserver.VehicleAction_NavigationWaypointsRequest{
+					NavigationWaypointsRequest: &carserver.NavigationWaypointsRequest{
+						Waypoints: waypoints,
+					},
+				},
+			},
+		})
+}

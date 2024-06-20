@@ -66,6 +66,7 @@ message VehicleAction {
         EraseUserDataAction eraseUserDataAction = 72;
         VehicleControlSetPinToDriveAction vehicleControlSetPinToDriveAction = 77;
         VehicleControlResetPinToDriveAction vehicleControlResetPinToDriveAction = 78;
+        NavigationWaypointsRequest navigationWaypointsRequest = 90;
     }
 }
 
@@ -414,4 +415,8 @@ message VehicleControlSetPinToDriveAction {
 }
 
 message VehicleControlResetPinToDriveAction {
+}
+
+message NavigationWaypointsRequest {
+    string waypoints = 1;
 }
